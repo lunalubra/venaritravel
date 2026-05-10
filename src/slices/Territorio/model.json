@@ -1,0 +1,43 @@
+{
+  "id": "territorio",
+  "type": "SharedSlice",
+  "name": "Territorio",
+  "description": "Full-bleed landscape anchor with minimal caption.",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Default Territorio",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Caption (one line)",
+            "placeholder": "Pie de foto descriptivo, una sola frase.",
+            "allowTargetBlank": false,
+            "single": "paragraph,em"
+          }
+        },
+        "location_label": {
+          "type": "Text",
+          "config": {
+            "label": "Location label",
+            "placeholder": "Sierra de Gredos · Castilla y León"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": ""
+    }
+  ]
+}

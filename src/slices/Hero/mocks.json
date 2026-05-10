@@ -1,0 +1,50 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "background_image": {
+        "__TYPE__": "ImageContent",
+        "url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2400&q=80",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2400&q=80",
+          "width": 2400,
+          "height": 1600
+        },
+        "width": 2400,
+        "height": 1600,
+        "edit": {
+          "background": "transparent",
+          "zoom": 1,
+          "crop": { "x": 0, "y": 0 },
+          "rotate": 0
+        },
+        "credits": null,
+        "alt": "Niebla de amanecer sobre encinar"
+      },
+      "headline": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading1",
+            "content": {
+              "text": "El arte de cazar en España, sin gestionar nada."
+            }
+          }
+        ]
+      },
+      "scroll_cue_label": {
+        "__TYPE__": "FieldContent",
+        "type": "Text",
+        "value": "Continuar"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

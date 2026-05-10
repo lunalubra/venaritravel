@@ -1,0 +1,60 @@
+{
+  "id": "detalle_editorial",
+  "type": "SharedSlice",
+  "name": "DetalleEditorial",
+  "description": "Atmospheric editorial block: image and text in asymmetric two-column composition.",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Default DetalleEditorial",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": "Detalle"
+          }
+        },
+        "headline": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Headline",
+            "placeholder": "Frase corta editorial.",
+            "allowTargetBlank": false,
+            "single": "heading2,em,strong"
+          }
+        },
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body",
+            "placeholder": "Cuerpo del bloque, dos o tres párrafos máximo.",
+            "allowTargetBlank": true,
+            "multi": "paragraph,em,strong,hyperlink"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image (5:7 vertical recommended)",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_position": {
+          "type": "Select",
+          "config": {
+            "label": "Image position",
+            "options": ["left", "right"],
+            "default_value": "left"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": ""
+    }
+  ]
+}

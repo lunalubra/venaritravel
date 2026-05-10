@@ -1,0 +1,69 @@
+{
+  "id": "contacto",
+  "type": "SharedSlice",
+  "name": "Contacto",
+  "description": "Private consultation request form. Narrow editorial column, hairline-only inputs.",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Default Contacto",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": "Contacto"
+          }
+        },
+        "headline": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Headline",
+            "placeholder": "Solicitar consulta privada",
+            "allowTargetBlank": false,
+            "single": "heading2,em"
+          }
+        },
+        "intro": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Intro paragraph",
+            "placeholder": "Una frase invitando a la conversación.",
+            "allowTargetBlank": false,
+            "multi": "paragraph,em,strong"
+          }
+        },
+        "submit_label": {
+          "type": "Text",
+          "config": {
+            "label": "Submit label",
+            "placeholder": "Enviar consulta"
+          }
+        },
+        "success_message": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Success message",
+            "placeholder": "Mensaje al cliente tras enviar.",
+            "allowTargetBlank": false,
+            "multi": "paragraph,em,strong,heading2"
+          }
+        },
+        "legal_note": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Legal note (optional)",
+            "placeholder": "Aviso de tratamiento de datos.",
+            "allowTargetBlank": true,
+            "multi": "paragraph,em,strong,hyperlink"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": ""
+    }
+  ]
+}

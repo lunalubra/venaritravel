@@ -1,0 +1,43 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Full-viewport opening. Atmospheric image with Loden overlay, brand wordmark, single-line display headline, scroll cue.",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Default Hero",
+      "primary": {
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "headline": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Headline",
+            "placeholder": "El arte de cazar en España, sin gestionar nada.",
+            "allowTargetBlank": false,
+            "single": "heading1,em,strong"
+          }
+        },
+        "scroll_cue_label": {
+          "type": "Text",
+          "config": {
+            "label": "Scroll cue label",
+            "placeholder": "Continuar"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": ""
+    }
+  ]
+}

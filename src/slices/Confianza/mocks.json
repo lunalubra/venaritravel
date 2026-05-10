@@ -1,0 +1,116 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "eyebrow": {
+        "__TYPE__": "FieldContent",
+        "type": "Text",
+        "value": "Confianza"
+      },
+      "statement": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading2",
+            "content": {
+              "text": "El modelo es relacional. Pocos clientes, mucho tiempo, ninguna transacción a ciegas."
+            }
+          }
+        ]
+      },
+      "pillars": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "label",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Text",
+                  "value": "Tarifa cerrada"
+                }
+              ],
+              [
+                "text",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Una cifra que cubre la jornada completa: alojamiento, comidas, traslados, derechos de finca y trofeo."
+                      }
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "label",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Text",
+                  "value": "Concierge dedicado"
+                }
+              ],
+              [
+                "text",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Un único interlocutor desde la primera llamada hasta el regreso. Sin transferencias internas, sin call centers."
+                      }
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "label",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Text",
+                  "value": "Acceso curado"
+                }
+              ],
+              [
+                "text",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Fincas privadas que no aparecen en catálogos. Ocupación reducida, calendarios reservados con un año de antelación."
+                      }
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

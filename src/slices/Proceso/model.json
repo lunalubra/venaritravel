@@ -1,0 +1,68 @@
+{
+  "id": "proceso",
+  "type": "SharedSlice",
+  "name": "Proceso",
+  "description": "Numbered process steps on inverted Loden surface. Hairline-separated vertical list.",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Default Proceso",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": "Cómo trabajamos"
+          }
+        },
+        "section_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Section title",
+            "placeholder": "Cuatro pasos.",
+            "allowTargetBlank": false,
+            "single": "heading2,em,strong"
+          }
+        },
+        "steps": {
+          "type": "Group",
+          "config": {
+            "label": "Steps",
+            "fields": {
+              "number": {
+                "type": "Text",
+                "config": {
+                  "label": "Number",
+                  "placeholder": "01"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "Consulta privada",
+                  "allowTargetBlank": false,
+                  "single": "heading3,em"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "Una o dos frases.",
+                  "allowTargetBlank": false,
+                  "multi": "paragraph,em,strong"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": ""
+    }
+  ]
+}

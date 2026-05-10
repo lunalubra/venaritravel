@@ -1,0 +1,76 @@
+{
+  "id": "modalidades",
+  "type": "SharedSlice",
+  "name": "Modalidades",
+  "description": "Editorial grid of hunting modalities. 3-column desktop, 1-column mobile. No card borders.",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Default Modalidades",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": "Modalidades"
+          }
+        },
+        "section_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Section title",
+            "placeholder": "Tres modalidades.",
+            "allowTargetBlank": false,
+            "single": "heading2,em,strong"
+          }
+        },
+        "modalidades": {
+          "type": "Group",
+          "config": {
+            "label": "Modalidades",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image (4:5 vertical)",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "name": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Name",
+                  "placeholder": "Caza mayor",
+                  "allowTargetBlank": false,
+                  "single": "heading3,em"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "Dos o tres frases descriptivas.",
+                  "allowTargetBlank": false,
+                  "multi": "paragraph,em,strong"
+                }
+              },
+              "tags": {
+                "type": "Text",
+                "config": {
+                  "label": "Tags (comma separated)",
+                  "placeholder": "monterías, recechos, aguardos"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": ""
+    }
+  ]
+}

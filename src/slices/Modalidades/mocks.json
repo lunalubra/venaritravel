@@ -1,0 +1,221 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "eyebrow": {
+        "__TYPE__": "FieldContent",
+        "type": "Text",
+        "value": "Modalidades"
+      },
+      "section_title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading2",
+            "content": {
+              "text": "Tres modalidades, fincas privadas, una conversación cada vez."
+            }
+          }
+        ]
+      },
+      "modalidades": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "__TYPE__": "ImageContent",
+                  "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+                  "origin": {
+                    "id": "main",
+                    "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+                    "width": 1200,
+                    "height": 1500
+                  },
+                  "width": 1200,
+                  "height": 1500,
+                  "edit": {
+                    "background": "transparent",
+                    "zoom": 1,
+                    "crop": { "x": 0, "y": 0 },
+                    "rotate": 0
+                  },
+                  "credits": null,
+                  "alt": "Niebla sobre dehesa al amanecer"
+                }
+              ],
+              [
+                "name",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "heading3",
+                      "content": { "text": "Caza mayor" }
+                    }
+                  ]
+                }
+              ],
+              [
+                "description",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Monterías clásicas en dehesas extremeñas y serranías béticas. Ciervo, gamo y jabalí en lances de tradición castellana, con rehalas reconocidas y cuadrillas de la finca."
+                      }
+                    }
+                  ]
+                }
+              ],
+              [
+                "tags",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Text",
+                  "value": "monterías, recechos, aguardos"
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "__TYPE__": "ImageContent",
+                  "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+                  "origin": {
+                    "id": "main",
+                    "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+                    "width": 1200,
+                    "height": 1500
+                  },
+                  "width": 1200,
+                  "height": 1500,
+                  "edit": {
+                    "background": "transparent",
+                    "zoom": 1,
+                    "crop": { "x": 0, "y": 0 },
+                    "rotate": 0
+                  },
+                  "credits": null,
+                  "alt": "Sierra al alba"
+                }
+              ],
+              [
+                "name",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "heading3",
+                      "content": { "text": "Cabra montés" }
+                    }
+                  ]
+                }
+              ],
+              [
+                "description",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Recechos en sierras de Gredos, Beceite y Sierra Nevada. Ascensión a primera luz con guía local; trofeos medibles, tiempos sin prisa, regreso a casa rural privada."
+                      }
+                    }
+                  ]
+                }
+              ],
+              [
+                "tags",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Text",
+                  "value": "Gredos, Beceite, Sierra Nevada"
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "image",
+                {
+                  "__TYPE__": "ImageContent",
+                  "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+                  "origin": {
+                    "id": "main",
+                    "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+                    "width": 1200,
+                    "height": 1500
+                  },
+                  "width": 1200,
+                  "height": 1500,
+                  "edit": {
+                    "background": "transparent",
+                    "zoom": 1,
+                    "crop": { "x": 0, "y": 0 },
+                    "rotate": 0
+                  },
+                  "credits": null,
+                  "alt": "Campo castellano de cereal"
+                }
+              ],
+              [
+                "name",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "heading3",
+                      "content": { "text": "Caza menor" }
+                    }
+                  ]
+                }
+              ],
+              [
+                "description",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Ojeos de perdiz roja en fincas de Toledo y Ciudad Real. Jornadas de tradición inglesa adaptada a campo castellano, con perros de muestra, almuerzo en cortijo y un ritmo deliberado."
+                      }
+                    }
+                  ]
+                }
+              ],
+              [
+                "tags",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Text",
+                  "value": "perdiz roja, ojeos, paloma torcaz"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

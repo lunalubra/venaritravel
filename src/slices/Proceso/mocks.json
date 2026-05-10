@@ -1,0 +1,191 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "eyebrow": {
+        "__TYPE__": "FieldContent",
+        "type": "Text",
+        "value": "Cómo trabajamos"
+      },
+      "section_title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading2",
+            "content": {
+              "text": "Cuatro pasos. Sin formularios largos, sin catálogo."
+            }
+          }
+        ]
+      },
+      "steps": {
+        "__TYPE__": "GroupContentType",
+        "value": [
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "number",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Text",
+                  "value": "01"
+                }
+              ],
+              [
+                "title",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "heading3",
+                      "content": { "text": "Consulta privada" }
+                    }
+                  ]
+                }
+              ],
+              [
+                "description",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Una conversación de cuarenta minutos por teléfono. Modalidad, fechas, número de invitados, expectativas."
+                      }
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "number",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Text",
+                  "value": "02"
+                }
+              ],
+              [
+                "title",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "heading3",
+                      "content": { "text": "Propuesta a medida" }
+                    }
+                  ]
+                }
+              ],
+              [
+                "description",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Documento breve con finca, días, alojamiento, comidas y tarifa cerrada. Sin extras escondidos."
+                      }
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "number",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Text",
+                  "value": "03"
+                }
+              ],
+              [
+                "title",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "heading3",
+                      "content": { "text": "Preparación" }
+                    }
+                  ]
+                }
+              ],
+              [
+                "description",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Permisos, traslados internos, alquiler de armas si procede, menús, vinos. Un único interlocutor desde la propuesta."
+                      }
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "__TYPE__": "GroupItemContent",
+            "value": [
+              [
+                "number",
+                {
+                  "__TYPE__": "FieldContent",
+                  "type": "Text",
+                  "value": "04"
+                }
+              ],
+              [
+                "title",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "heading3",
+                      "content": { "text": "La jornada" }
+                    }
+                  ]
+                }
+              ],
+              [
+                "description",
+                {
+                  "__TYPE__": "StructuredTextContent",
+                  "value": [
+                    {
+                      "type": "paragraph",
+                      "content": {
+                        "text": "Acompañamiento discreto en finca durante los días de caza. Lo único que pedimos es que llegue con tiempo y se quede a la sobremesa."
+                      }
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

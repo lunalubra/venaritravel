@@ -1,0 +1,59 @@
+{
+  "id": "confianza",
+  "type": "SharedSlice",
+  "name": "Confianza",
+  "description": "Trust block: display statement plus three pillars on Hueso surface.",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Default Confianza",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": "Confianza"
+          }
+        },
+        "statement": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Statement",
+            "placeholder": "Una frase declarativa sobre el modelo relacional.",
+            "allowTargetBlank": false,
+            "single": "heading2,em,strong"
+          }
+        },
+        "pillars": {
+          "type": "Group",
+          "config": {
+            "label": "Pillars",
+            "fields": {
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Label",
+                  "placeholder": "Tarifa cerrada"
+                }
+              },
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Text",
+                  "placeholder": "Una o dos frases.",
+                  "allowTargetBlank": false,
+                  "multi": "paragraph,em,strong"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": ""
+    }
+  ]
+}

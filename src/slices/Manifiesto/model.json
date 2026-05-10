@@ -1,0 +1,44 @@
+{
+  "id": "manifiesto",
+  "type": "SharedSlice",
+  "name": "Manifiesto",
+  "description": "Positioning statement on Hueso. Asymmetric, indented, single declarative sentence with optional support paragraph.",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Default Manifiesto",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": "Manifiesto"
+          }
+        },
+        "statement": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Statement",
+            "placeholder": "Una frase declarativa sobre la marca y el cliente.",
+            "allowTargetBlank": false,
+            "single": "heading2,em,strong"
+          }
+        },
+        "support": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Support paragraph (optional)",
+            "placeholder": "Párrafo breve, dos o tres frases.",
+            "allowTargetBlank": true,
+            "multi": "paragraph,em,strong,hyperlink"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": ""
+    }
+  ]
+}

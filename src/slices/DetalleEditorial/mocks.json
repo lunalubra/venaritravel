@@ -1,0 +1,72 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "eyebrow": {
+        "__TYPE__": "FieldContent",
+        "type": "Text",
+        "value": "Detalle"
+      },
+      "headline": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading2",
+            "content": {
+              "text": "El equipo, el guante, la cocina."
+            }
+          }
+        ]
+      },
+      "body": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Trabajamos con casas y armerías que entienden el oficio. Si llega sin equipo, alquilamos en la finca; si quiere traer el suyo, gestionamos el permiso temporal."
+            }
+          },
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Las cenas no son una atracción turística. Son las que hace la casa, con vinos de la zona, en la mesa larga del comedor."
+            }
+          }
+        ]
+      },
+      "image": {
+        "__TYPE__": "ImageContent",
+        "url": "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=1400&q=80",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=1400&q=80",
+          "width": 1400,
+          "height": 1960
+        },
+        "width": 1400,
+        "height": 1960,
+        "edit": {
+          "background": "transparent",
+          "zoom": 1,
+          "crop": { "x": 0, "y": 0 },
+          "rotate": 0
+        },
+        "credits": null,
+        "alt": "Detalle de cuero curtido"
+      },
+      "image_position": {
+        "__TYPE__": "FieldContent",
+        "type": "Select",
+        "value": "left"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

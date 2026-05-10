@@ -1,0 +1,261 @@
+@import "tailwindcss";
+
+@theme {
+  --color-loden: #1f2a22;
+  --color-hueso: #f1e9d6;
+  --color-cordoban: #5c2a1e;
+  --color-pajizo: #b8945a;
+  --color-tinta: #1a1815;
+  --color-piedra: #6e6961;
+
+  --font-serif: var(--font-cormorant), "Sang Bleu OG Serif", Garamond,
+    ui-serif, Georgia, serif;
+  --font-sans: var(--font-proza), "Proza Libre", system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+
+  --tracking-eyebrow: 0.07em;
+
+  --text-display: clamp(2.5rem, 5vw, 4rem);
+  --text-h1: clamp(2.25rem, 4vw, 3rem);
+  --text-h2: clamp(1.75rem, 2.6vw, 2rem);
+  --text-h3: clamp(1.125rem, 1.4vw, 1.25rem);
+  --text-numeral: clamp(3rem, 6vw, 5rem);
+
+  --ease-out-quart: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-hueso);
+    color: var(--color-tinta);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.65;
+    font-feature-settings: "kern", "liga", "calt", "ss01";
+  }
+
+  ::selection {
+    background-color: var(--color-loden);
+    color: var(--color-hueso);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  img,
+  picture,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-piedra);
+  line-height: 1.2;
+}
+
+@utility hairline {
+  border-top: 1px solid color-mix(in oklab, currentColor 25%, transparent);
+}
+
+@utility hairline-bottom {
+  border-bottom: 1px solid color-mix(in oklab, currentColor 25%, transparent);
+}
+
+@utility link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 320ms var(--ease-out-quart),
+    color 320ms var(--ease-out-quart);
+  &:hover {
+    background-size: 100% 1px;
+  }
+  &:focus-visible {
+    background-size: 100% 1px;
+    outline: 2px solid var(--color-cordoban);
+    outline-offset: 4px;
+  }
+}
+
+/* ───────────────────────── motion ───────────────────────── */
+
+/*
+ * The `js` class is added by RevealEffect on hydration so we can hide
+ * elements before they reveal. Without JS, content stays visible.
+ */
+
+@keyframes vt-reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes vt-reveal-line {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes vt-reveal-image {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes vt-hero-text {
+  from {
+    opacity: 0;
+    transform: translateY(36px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Scroll-triggered reveals: only active when JS has hydrated.
+ * Without JS the content is visible by default — graceful degradation. */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  filter: blur(6px);
+  transition:
+    opacity 1100ms var(--ease-out-quart),
+    transform 1100ms var(--ease-out-quart),
+    filter 1100ms var(--ease-out-quart);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.js [data-reveal][data-revealed="true"] {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.js [data-reveal="line"] {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 800ms var(--ease-out-quart);
+  transition-delay: var(--reveal-delay, 0ms);
+  opacity: 1;
+  filter: none;
+}
+
+.js [data-reveal="line"][data-revealed="true"] {
+  transform: scaleX(1);
+}
+
+.js [data-reveal="image"] {
+  opacity: 0;
+  transform: scale(1.04);
+  filter: blur(10px);
+  transition:
+    opacity 1500ms var(--ease-out-quart),
+    transform 1800ms var(--ease-out-quart),
+    filter 1500ms var(--ease-out-quart);
+}
+
+.js [data-reveal="image"][data-revealed="true"] {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+}
+
+/* Hero entrance: time-based Ken Burns scale + brightness on load. */
+@keyframes vt-hero-scale {
+  from {
+    transform: scale(1.07);
+    filter: brightness(0.92);
+  }
+  to {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+.hero-image-frame {
+  transform-origin: center;
+  animation: vt-hero-scale 2400ms var(--ease-out-expo) forwards;
+}
+
+.hero-text-rise {
+  opacity: 0;
+  animation: vt-hero-text 1400ms var(--ease-out-quart) 200ms forwards;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .js [data-reveal],
+  .js [data-reveal="line"],
+  .js [data-reveal="image"] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+  .hero-image-frame {
+    animation: none !important;
+    transform: scale(1) !important;
+  }
+}
