@@ -18,14 +18,20 @@ const Hero: FC<HeroProps> = ({ slice }) => {
       className="relative isolate flex w-full flex-col overflow-hidden bg-loden text-hueso min-h-[clamp(34rem,80svh,48rem)]"
     >
       {hasImage ? (
-        <PrismicNextImage
-          field={slice.primary.background_image}
-          fill
-          preload
-          sizes="100vw"
-          className="hero-image-frame absolute inset-0 -z-20 h-full w-full object-cover"
-          fallbackAlt=""
-        />
+        <div
+          className="parallax-image absolute inset-0 -z-20"
+          data-parallax-start="top top"
+          data-parallax-end="bottom top"
+        >
+          <PrismicNextImage
+            field={slice.primary.background_image}
+            fill
+            preload
+            sizes="100vw"
+            className="hero-image-frame object-cover"
+            fallbackAlt=""
+          />
+        </div>
       ) : null}
 
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-loden/35" />

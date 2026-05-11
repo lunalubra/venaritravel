@@ -92,12 +92,14 @@ const Modalidades: FC<ModalidadesProps> = ({ slice }) => {
               >
                 {isFilled.image(item.image) ? (
                   <div className="relative mb-7 w-full overflow-hidden bg-loden/5 aspect-[4/5]">
-                    <PrismicNextImage
-                      field={item.image}
-                      fill
-                      sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
-                    />
+                    <div className="parallax-image absolute inset-0">
+                      <PrismicNextImage
+                        field={item.image}
+                        fill
+                        sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
+                        className="object-cover transition-transform duration-[1600ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
+                      />
+                    </div>
                   </div>
                 ) : (
                   <div

@@ -5,6 +5,7 @@ import { PrismicPreview } from "@prismicio/next";
 
 import { repositoryName } from "@/prismicio";
 import { Footer } from "@/components/Footer";
+import { ParallaxEffect } from "@/components/ParallaxEffect";
 import { RevealEffect } from "@/components/RevealEffect";
 import "./globals.css";
 
@@ -76,6 +77,7 @@ export default function RootLayout({
       </head>
       <body className="bg-hueso text-tinta antialiased">
         <RevealEffect />
+        <ParallaxEffect />
         <main id="main">{children}</main>
         <Footer />
       </body>

@@ -19,12 +19,14 @@ const Territorio: FC<TerritorioProps> = ({ slice }) => {
               data-reveal="image"
               className="relative w-full overflow-hidden bg-loden/5 aspect-[16/9] md:aspect-[21/9]"
             >
-              <PrismicNextImage
-                field={slice.primary.image}
-                fill
-                sizes="100vw"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
+              <div className="parallax-image absolute inset-0">
+                <PrismicNextImage
+                  field={slice.primary.image}
+                  fill
+                  sizes="100vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
             <figcaption className="mt-6 grid grid-cols-12 gap-x-6">
               <div className="col-span-12 sm:col-span-2">

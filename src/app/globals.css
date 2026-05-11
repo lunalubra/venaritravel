@@ -237,6 +237,15 @@
   animation: vt-hero-text 1400ms var(--ease-out-quart) 200ms forwards;
 }
 
+/* Parallax base: wrapper sits inside an `overflow-hidden` frame and is
+ * scaled 1.45x so the GSAP yPercent translation (±20%) never reveals the
+ * section behind the image. ParallaxEffect.tsx animates this via GSAP. */
+.parallax-image {
+  transform: scale(1.45);
+  transform-origin: center;
+  will-change: transform;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -254,8 +263,10 @@
     transform: none !important;
     filter: none !important;
   }
-  .hero-image-frame {
+  .hero-image-frame,
+  .parallax-image {
     animation: none !important;
     transform: scale(1) !important;
+    translate: 0 0 !important;
   }
 }
