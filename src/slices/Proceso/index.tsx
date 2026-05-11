@@ -2,6 +2,7 @@ import { type FC } from "react";
 import { type Content, isFilled } from "@prismicio/client";
 import { PrismicRichText, type SliceComponentProps } from "@prismicio/react";
 
+import { TextureStamp } from "@/components/TextureStamp";
 import { withSoftBreaks } from "@/lib/soft-break";
 
 type ProcesoProps = SliceComponentProps<Content.ProcesoSlice>;
@@ -13,8 +14,17 @@ const Proceso: FC<ProcesoProps> = ({ slice }) => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="bg-loden text-hueso"
+      className="relative isolate overflow-hidden bg-loden text-hueso"
     >
+      {/* Galgo: tall right-edge stamp, bleeds past the right edge so the
+       * silhouette runs through the four-step rhythm like a quiet column. */}
+      <TextureStamp
+        src="/iconos/venaritravel-icon-galgo.svg"
+        aspectRatio="168 / 226"
+        className="-right-[6%] top-1/2 -z-10 h-[88%] -translate-y-1/2"
+        opacity={0.07}
+      />
+
       <div className="mx-auto w-full max-w-[88rem] px-6 py-28 sm:px-10 sm:py-36 lg:px-16 lg:py-40">
         <header className="grid grid-cols-12 gap-x-6 mb-20 sm:mb-28">
           <div className="col-span-12 sm:col-span-3 lg:col-span-2 mb-6 sm:mb-0">

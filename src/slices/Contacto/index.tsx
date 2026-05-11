@@ -46,8 +46,28 @@ const Contacto: FC<ContactoProps> = ({ slice }) => {
       id="contacto"
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="bg-loden text-hueso scroll-mt-24"
+      className="relative isolate overflow-hidden bg-loden text-hueso scroll-mt-24"
     >
+      {/* Tapestry: caballo + galgo + pájaro tiled as a single repeating
+       * unit so the section's empty negative space stays inhabited rather
+       * than reading as a void next to the form. */}
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10 block"
+        style={{
+          backgroundColor: "currentColor",
+          opacity: 0.06,
+          WebkitMaskImage: "url(/iconos/pattern-contacto.svg)",
+          maskImage: "url(/iconos/pattern-contacto.svg)",
+          WebkitMaskRepeat: "repeat",
+          maskRepeat: "repeat",
+          WebkitMaskSize: "540px 420px",
+          maskSize: "540px 420px",
+          WebkitMaskPosition: "0 0",
+          maskPosition: "0 0",
+        }}
+      />
+
       <div className="mx-auto w-full max-w-[88rem] px-6 py-28 sm:px-10 sm:py-36 lg:px-16 lg:py-40">
         <div className="grid grid-cols-12 gap-x-6">
           <header className="col-span-12 sm:col-span-3 lg:col-span-2 mb-6 sm:mb-0">

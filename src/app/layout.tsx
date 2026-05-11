@@ -57,6 +57,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://venaritravel.com",
   ),
+  icons: {
+    icon: [
+      {
+        url: "/brand/venaritravel-logo-ciervo.svg",
+        type: "image/svg+xml",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

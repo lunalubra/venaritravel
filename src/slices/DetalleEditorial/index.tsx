@@ -3,6 +3,7 @@ import { type Content, isFilled } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, type SliceComponentProps } from "@prismicio/react";
 
+import { TextureStamp } from "@/components/TextureStamp";
 import { withSoftBreaks } from "@/lib/soft-break";
 
 type DetalleEditorialProps = SliceComponentProps<Content.DetalleEditorialSlice>;
@@ -14,8 +15,18 @@ const DetalleEditorial: FC<DetalleEditorialProps> = ({ slice }) => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="bg-cordoban text-hueso"
+      className="relative isolate overflow-hidden bg-cordoban text-hueso"
     >
+      {/* Caballo: square stamp tucked into the top-right corner, tilted a
+       * touch so it reads as a hand-applied seal rather than centered art. */}
+      <TextureStamp
+        src="/iconos/venaritravel-icon-caballo.svg"
+        aspectRatio="232 / 232"
+        className="-right-[8%] -top-[12%] -z-10 h-[70%]"
+        opacity={0.09}
+        rotate={-8}
+      />
+
       <div className="mx-auto w-full max-w-[88rem] px-6 py-24 sm:px-10 sm:py-32 lg:px-16 lg:py-36">
         <div className="grid grid-cols-12 gap-x-6 gap-y-12">
           <div

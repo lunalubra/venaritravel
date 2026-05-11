@@ -1,3 +1,14 @@
 # Brand assets
 
-Drop the official venaritravel SVG logo here as `wordmark.svg` (and any monochrome variant as `wordmark-light.svg` / `wordmark-dark.svg`). Until those assets land, `src/components/Wordmark.tsx` renders a typographic placeholder using Cormorant Garamond italic. To swap in the real SVG, update the `Wordmark` component to render the SVG inline (or via `<Image>`) and remove the typographic fallback.
+`venaritravel-logo-ciervo.svg` is the official brand mark (ciervo). It is the
+canonical source used in three places:
+
+- the favicon, declared in `src/app/layout.tsx` via Next.js `metadata.icons`
+- the in-page logo, rendered by `src/components/DeerMark.tsx` as a CSS
+  `mask-image` so the silhouette can inherit `currentColor` and stay legible
+  on dark hero/footer surfaces without a separate inverted asset
+- via `<Wordmark>` (a thin wrapper around `<DeerMark>`) in the hero header
+  and footer
+
+If a horizontal lockup or alternate variants land later, add them here
+alongside this file (e.g. `wordmark-light.svg`).
